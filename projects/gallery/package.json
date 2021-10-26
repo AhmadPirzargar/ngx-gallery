@@ -1,0 +1,33 @@
+{
+  "name": "@artavil/ngx-gallery",
+  "version": "1.2.0",
+  "description": "A simple responsive native gallery component for Angular 8+",
+  "homepage": "https://github.com/AhmadPirzargar/ngx-gallery",
+  "author": {
+    "name": "ahmad pirzargar",
+    "url": "https://github.com/AhmadPirzargar"
+  },
+  "repository": "https://github.com/AhmadPirzargar/ngx-gallery",
+  "license": "MIT",
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/AhmadPirzargar/ngx-gallery/issues"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=8.0.0",
+    "@angular/core": ">=8.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "keywords": [
+    "angular",
+    "gallery",
+    "component",
+    "ngx-gallery",
+    "responsive gallery component",
+    "images",
+    "slider",
+    "carousel"
+  ]
+}
