@@ -131,6 +131,7 @@ ngx-gallery-bullets {
   flex-wrap: wrap;
   .thumbnails {
     display: inline-flex;
+    border-radius: 7px;
   }
   img {
     width: 100px;

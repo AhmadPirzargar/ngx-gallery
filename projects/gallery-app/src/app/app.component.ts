@@ -23,7 +23,8 @@ export class AppComponent implements OnInit {
         arrowPrevIcon: 'fa fa-chevron-left',
         arrowNextIcon: 'fa fa-chevron-right',
         imageAnimation: NgxGalleryAnimation.Rotate,
-        imageSwipe: true
+        imageSwipe: true,
+        previewThumbnail: true
       },
       // max-width 800
       {

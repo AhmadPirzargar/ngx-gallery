@@ -65,6 +65,7 @@ export interface INgxGalleryOptions {
   previewZoomMin?: number;
   previewRotate?: boolean;
   previewDownload?: boolean;
+  previewThumbnail?: boolean;
   previewCustom?: (index: number) => void;
   previewBullets?: boolean;
   arrowPrevIcon?: string;
@@ -234,6 +235,7 @@ export class NgxGalleryOptions implements INgxGalleryOptions {
     this.previewZoomMin = use(obj.previewZoomMin, 0.5);
     this.previewRotate = use(obj.previewRotate, false);
     this.previewDownload = use(obj.previewDownload, false);
+    this.previewThumbnail = use(obj.previewThumbnail, false);
     this.previewCustom = use(obj.previewCustom, undefined);
     this.previewBullets = use(obj.previewBullets, false);
 
