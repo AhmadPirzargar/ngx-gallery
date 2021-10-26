@@ -10,7 +10,7 @@ thumbnail for preview added.
 Install via [npm][npm] package manager
 
 ```bash
-npm install @kolkov/ngx-gallery --save
+npm install @artavil/ngx-gallery --save
 ```
 
 ### Versions
@@ -44,9 +44,9 @@ where
 
 ```
 import {Component, OnInit} from '@angular/core';
-import {NgxGalleryOptions} from '@kolkov/ngx-gallery';
-import {NgxGalleryImage} from '@kolkov/ngx-gallery';
-import {NgxGalleryAnimation} from '@kolkov/ngx-gallery';
+import {NgxGalleryOptions} from '@artavil/ngx-gallery';
+import {NgxGalleryImage} from '@artavil/ngx-gallery';
+import {NgxGalleryAnimation} from '@artavil/ngx-gallery';
 
 @Component({
   selector: 'app-root',
