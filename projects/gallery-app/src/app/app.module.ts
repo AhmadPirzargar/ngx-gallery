@@ -1,9 +1,9 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgxGalleryModule } from '@artavil/ngx-gallery';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -11,7 +11,7 @@ import { NgxGalleryModule } from '@artavil/ngx-gallery';
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserAnimationsModule,
     NgxGalleryModule,
     AppRoutingModule
   ],

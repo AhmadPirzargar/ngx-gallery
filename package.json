@@ -1,9 +1,9 @@
 {
   "name": "@artavil/ngx-gallery",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 4202",
     "build": "ng build",
     "build-prod": "ng build --prod",
     "test": "ng test",
