@@ -5,6 +5,7 @@ import {
   ElementRef,
   EventEmitter,
   HostListener,
+  Inject,
   Input,
   OnChanges,
   OnDestroy,
@@ -38,7 +39,8 @@ export class NgxGalleryPreviewComponent implements OnInit, OnDestroy, OnChanges 
   loading = false;
   rotateValue = 0;
   index = 0;
-
+  screenWidth;
+  screenHeight;
   @Input() images: string[] | SafeResourceUrl[];
   @Input() descriptions: string[];
   @Input() showDescription: boolean;
@@ -100,6 +102,7 @@ export class NgxGalleryPreviewComponent implements OnInit, OnDestroy, OnChanges 
     if (this.arrows && this.arrowsAutoHide) {
       this.arrows = false;
     }
+    this.onResize();
   }
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -126,7 +129,11 @@ export class NgxGalleryPreviewComponent implements OnInit, OnDestroy, OnChanges 
       this.arrows = false;
     }
   }
-
+  @HostListener('window:resize', ['$event'])
+  onResize(event?) {
+    this.screenHeight = window.innerHeight;
+    this.screenWidth = window.innerWidth;
+  }
   onKeyDown(e) {
     if (this.isOpen) {
       if (this.keyboardNavigation) {

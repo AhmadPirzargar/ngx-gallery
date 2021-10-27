@@ -1,7 +1,9 @@
 # NgxGallery
 
 A simple native gallery component for Angular 10+.
-thumbnail for preview added.
+
+- Show thumbnail in preview mode.
+- Remove BrowserAnimationsModule from gallery package.
 
 ## Getting Started
 

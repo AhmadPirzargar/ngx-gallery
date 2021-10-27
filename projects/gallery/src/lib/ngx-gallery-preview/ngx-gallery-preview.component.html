@@ -22,7 +22,8 @@
   <i class="ngx-gallery-icon ngx-gallery-spinner {{spinnerIcon}}" aria-hidden="true"></i>
 </div>
 <div class="ngx-gallery-preview-wrapper" (click)="closeOnClick && close()" (mouseup)="mouseUpHandler($event)"
-  (mousemove)="mouseMoveHandler($event)" (touchend)="mouseUpHandler($event)" (touchmove)="mouseMoveHandler($event)">
+  (mousemove)="mouseMoveHandler($event)" (touchend)="mouseUpHandler($event)" (touchmove)="mouseMoveHandler($event)"
+  [style.height.%]="previewThumbnail?screenWidth<768?65:80:100">
   <div class="ngx-gallery-preview-img-wrapper">
     <img *ngIf="src && type == 'image'" #previewImage class="ngx-gallery-preview-img ngx-gallery-center" [src]="src"
       (click)="$event.stopPropagation()" (mouseenter)="imageMouseEnter()" (mouseleave)="imageMouseLeave()"
