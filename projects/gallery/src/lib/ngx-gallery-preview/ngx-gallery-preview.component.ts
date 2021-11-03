@@ -42,6 +42,7 @@ export class NgxGalleryPreviewComponent implements OnInit, OnDestroy, OnChanges 
   screenWidth;
   screenHeight;
   @Input() images: string[] | SafeResourceUrl[];
+  @Input() thumbnailImages: string[] | SafeResourceUrl[];
   @Input() descriptions: string[];
   @Input() showDescription: boolean;
   @Input() arrows: boolean;

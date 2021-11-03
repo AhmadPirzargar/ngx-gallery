@@ -26,7 +26,7 @@
     [actions]="currentOptions?.thumbnailActions" (activeChange)="selectFromThumbnails($event)"
     [ngClass]="currentOptions?.thumbnailClasses"></ngx-gallery-thumbnails>
 
-  <ngx-gallery-preview [images]="bigImages" [descriptions]="descriptions"
+  <ngx-gallery-preview [images]="bigImages" [thumbnailImages]="smallImages" [descriptions]="descriptions"
     [showDescription]="currentOptions?.previewDescription" [arrowPrevIcon]="currentOptions?.arrowPrevIcon"
     [arrowNextIcon]="currentOptions?.arrowNextIcon" [closeIcon]="currentOptions?.closeIcon"
     [fullscreenIcon]="currentOptions?.fullscreenIcon" [spinnerIcon]="currentOptions?.spinnerIcon"

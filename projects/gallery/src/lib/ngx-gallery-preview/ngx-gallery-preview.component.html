@@ -47,7 +47,7 @@
 </div>
 
 <div class="preview-thumbnail" *ngIf="previewThumbnail">
-  <div class="thumbnails" *ngFor="let pic of images;let i=index" [ngClass]="{'selected':index==i}">
+  <div class="thumbnails" *ngFor="let pic of thumbnailImages;let i=index" [ngClass]="{'selected':index==i}">
     <img [src]="pic" (click)="showAtIndex(i)">
   </div>
 </div>
