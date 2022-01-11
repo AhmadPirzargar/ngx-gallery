@@ -20,8 +20,8 @@ export class AppComponent implements OnInit {
         width: '600px',
         height: '400px',
         thumbnailsColumns: 4,
-        arrowPrevIcon: 'fa fa-chevron-left',
-        arrowNextIcon: 'fa fa-chevron-right',
+        // arrowPrevIcon: 'fa fa-chevron-left',
+        // arrowNextIcon: 'fa fa-chevron-right',
         imageAnimation: NgxGalleryAnimation.Rotate,
         imageSwipe: true,
         previewThumbnail: true

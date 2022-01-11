@@ -15,6 +15,7 @@
 :host {
   display: none;
   font-size: 50px !important;
+
   .ngx-gallery-arrow {
     font-size: 50px !important;
   }
@@ -128,10 +129,12 @@ ngx-gallery-bullets {
   align-content: space-around;
   justify-content: center;
   flex-wrap: wrap;
+
   .thumbnails {
     display: inline-flex;
     border-radius: 7px;
   }
+
   img {
     width: 100px;
     height: 100px;
@@ -142,10 +145,38 @@ ngx-gallery-bullets {
   .selected {
     background-color: rgba(24, 152, 118, 0.3);
   }
+
   @media (max-width: 992px) {
     img {
       height: 75px;
       width: 75px;
     }
   }
+}
+
+@media (min-width: 1920px) {
+  .preview-arrows {
+    $value: calc((100vw - 1900px) / 2);
+
+    ::ng-deep .ngx-gallery-arrow-left {
+      left: $value !important;
+    }
+
+    ::ng-deep .ngx-gallery-arrow-right {
+      right: $value !important;
+    }
+
+    ::ng-deep .ngx-gallery-arrow-left {
+      .ngx-gallery-arrow {
+        left: $value !important;
+      }
+    }
+
+    ::ng-deep .ngx-gallery-arrow-right {
+      .ngx-gallery-arrow {
+        right: $value !important;
+      }
+    }
+  }
+
 }

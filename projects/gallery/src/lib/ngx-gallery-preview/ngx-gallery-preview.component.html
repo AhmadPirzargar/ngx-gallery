@@ -1,5 +1,6 @@
-<ngx-gallery-arrows *ngIf="arrows" (prevClick)="showPrev()" (nextClick)="showNext()" [prevDisabled]="!canShowPrev()"
-  [nextDisabled]="!canShowNext()" [arrowPrevIcon]="arrowPrevIcon" [arrowNextIcon]="arrowNextIcon"></ngx-gallery-arrows>
+<ngx-gallery-arrows class="preview-arrows" *ngIf="arrows" (prevClick)="showPrev()" (nextClick)="showNext()"
+  [prevDisabled]="!canShowPrev()" [nextDisabled]="!canShowNext()" [arrowPrevIcon]="arrowPrevIcon"
+  [arrowNextIcon]="arrowNextIcon"></ngx-gallery-arrows>
 <div class="ngx-gallery-preview-top">
   <div class="ngx-gallery-preview-icons">
     <ngx-gallery-action *ngFor="let action of actions" [icon]="action.icon" [disabled]="action.disabled"

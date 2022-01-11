@@ -239,8 +239,8 @@ export class NgxGalleryOptions implements INgxGalleryOptions {
     this.previewCustom = use(obj.previewCustom, undefined);
     this.previewBullets = use(obj.previewBullets, false);
 
-    this.arrowPrevIcon = use(obj.arrowPrevIcon, 'fa fa-arrow-circle-left');
-    this.arrowNextIcon = use(obj.arrowNextIcon, 'fa fa-arrow-circle-right');
+    this.arrowPrevIcon = use(obj.arrowPrevIcon, 'icon-square-arrow-left'); // fa fa-arrow-circle-left
+    this.arrowNextIcon = use(obj.arrowNextIcon, 'icon-square-arrow-right'); // fa fa-arrow-circle-right
     this.closeIcon = use(obj.closeIcon, 'fa fa-times-circle');
     this.fullscreenIcon = use(obj.fullscreenIcon, 'fa fa-arrows-alt');
     this.spinnerIcon = use(obj.spinnerIcon, 'fa fa-spinner fa-pulse fa-3x fa-fw');
