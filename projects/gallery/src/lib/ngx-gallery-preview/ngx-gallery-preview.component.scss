@@ -27,6 +27,14 @@ ngx-gallery-bullets {
   padding: 0;
 }
 
+.preview-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
 .ngx-gallery-preview-img {
   opacity: 0;
   max-width: 90%;

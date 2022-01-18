@@ -55,3 +55,9 @@
   width: 30px;
   height: 30px;
 }
+
+@media (max-width: 450px) {
+  .ngx-gallery-arrow {
+    top: 40%;
+  }
+}
